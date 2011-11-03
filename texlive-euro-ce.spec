@@ -1,3 +1,9 @@
+# revision 15878
+# category Package
+# catalog-ctan /fonts/euro-ce
+# catalog-date 2007-07-29 11:53:03 +0200
+# catalog-license other-free
+# catalog-version undef
 Name:		texlive-euro-ce
 Version:	20070729
 Release:	1
@@ -62,6 +68,7 @@ to fit with Computer Modern-set text.
 %doc %{_texmfdistdir}/doc/fonts/euro-ce/euro-ce.doc
 %doc %{_texmfdistdir}/doc/fonts/euro-ce/euro-ce.dvi
 %doc %{_texmfdistdir}/doc/fonts/euro-ce/euro-ce.tex
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -72,3 +79,5 @@ to fit with Computer Modern-set text.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar fonts doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
