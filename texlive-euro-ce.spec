@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-euro-ce
 Version:	20070729
-Release:	1
+Release:	2
 Summary:	Euro and CE sign font
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/euro-ce
