@@ -1,16 +1,17 @@
-# revision 15878
+# revision 25714
 # category Package
 # catalog-ctan /fonts/euro-ce
-# catalog-date 2007-07-29 11:53:03 +0200
-# catalog-license other-free
-# catalog-version undef
+# catalog-date 2012-03-20 10:39:30 +0100
+# catalog-license bsd
+# catalog-version 3.0b
 Name:		texlive-euro-ce
-Version:	20070729
-Release:	2
+Epoch:		1
+Version:	3.0b
+Release:	1
 Summary:	Euro and CE sign font
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/euro-ce
-License:	OTHER-FREE
+License:	BSD
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/euro-ce.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/euro-ce.doc.tar.xz
 BuildArch:	noarch
@@ -19,7 +20,7 @@ Requires(pre):	texlive-tlpkg
 Requires(post):	texlive-kpathsea
 
 %description
-MetaFont source for the symbols in several variants, designed
+Metafont source for the symbols in several variants, designed
 to fit with Computer Modern-set text.
 
 %post
