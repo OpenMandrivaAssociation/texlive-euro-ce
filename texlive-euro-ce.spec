@@ -70,3 +70,21 @@ to fit with Computer Modern-set text.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar fonts doc %{buildroot}%{_texmfdistdir}
+
+
+%changelog
+* Tue Mar 27 2012 Paulo Andrade <pcpa@mandriva.com.br> 1:3.0b-1
++ Revision: 787588
+- Update to latest release.
+
+* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 20070729-2
++ Revision: 751665
+- Rebuild to reduce used resources
+
+* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 20070729-1
++ Revision: 718388
+- texlive-euro-ce
+- texlive-euro-ce
+- texlive-euro-ce
+- texlive-euro-ce
+
