@@ -7,7 +7,7 @@
 Name:		texlive-euro-ce
 Epoch:		1
 Version:	3.0b
-Release:	6
+Release:	7
 Summary:	Euro and CE sign font
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/euro-ce
