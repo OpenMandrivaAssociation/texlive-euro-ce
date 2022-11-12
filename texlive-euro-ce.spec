@@ -1,19 +1,13 @@
-# revision 25714
-# category Package
-# catalog-ctan /fonts/euro-ce
-# catalog-date 2012-03-20 10:39:30 +0100
-# catalog-license bsd
-# catalog-version 3.0b
 Name:		texlive-euro-ce
 Epoch:		1
-Version:	3.0b
-Release:	10
+Version:	25714
+Release:	1
 Summary:	Euro and CE sign font
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/euro-ce
 License:	BSD
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/euro-ce.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/euro-ce.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/euro-ce.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/euro-ce.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -24,12 +18,12 @@ Metafont source for the symbols in several variants, designed
 to fit with Computer Modern-set text.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -63,28 +57,10 @@ to fit with Computer Modern-set text.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar fonts doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Tue Mar 27 2012 Paulo Andrade <pcpa@mandriva.com.br> 1:3.0b-1
-+ Revision: 787588
-- Update to latest release.
-
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 20070729-2
-+ Revision: 751665
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 20070729-1
-+ Revision: 718388
-- texlive-euro-ce
-- texlive-euro-ce
-- texlive-euro-ce
-- texlive-euro-ce
-
